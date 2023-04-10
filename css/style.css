@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=B612&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700&display=swap');
+
+
+body 
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+/* Navigation */
+
+nav	
+{
+	z-index: 1000;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 110px;
+	box-sizing: border-box;
+	
+	transition: .6s!important;
+
+}
+
+nav.bar
+{
+	
+	width: 100% ;
+	height: 65px;
+	padding: 10px 50px;
+	background-color: black;
+	/*header drop down shadow*/
+	box-shadow: 1px 1px 2px #161616;
+}
+
+
+/*#logo	
+{
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-image: url(../images/logo1.jpg);
+}
+*/
+
+nav	ul 
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li 
+{
+	list-style: none;
+}
+
+nav	ul li a 
+{
+	line-height: 50px;
+	color: white;
+	padding: 5px 20px;
+	font-family: 'B612', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+
+}
+
+
+nav	ul li a:hover 
+{
+	text-decoration: none;
+	border-bottom: solid 3px #C60021;
+	color: white;
+    
+    	
+}
+
+
+
+
+.carousel-item {
+	height: 100vh;
+	min-height: 350px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+  }
+
+
+
+	/* Make the image fully responsive */
+.carousel-inner img 
+{
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-caption.d-none.d-md-block
+{
+
+}
+
+/*<!--slidder-->*/
+
+.display-4
+{
+	
+	letter-spacing: 010px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 900;
+	animation: Moveup 1.5s ease-out ;
+	
+	
+}
+
+.lead{
+	animation: Moveup 1.5s ease-out ;
+}
+
+
+
+
+.button {
+	color: white !important;
+	text-transform: uppercase;
+	background: black;
+	padding: 20px;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	margin-bottom: 210px;
+	animation: Moveup 1.5s ease-out ;
+
+	}
+
+
+	.button:hover {
+	color: white !important;
+	background-color: #C60021;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	transform: translateY(-1.5px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.button:hover::after
+{
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+
+}
+
+
+
+@keyframes Moveup
+{
+	0%  {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	80%  {
+		
+		transform: translateY(10px);
+	}
+	100%  {
+		opacity: 1;
+		transform: translateY(0px);
+	}		
+}
+
+/*About Society*/
+
+
+.heading
+{
+	font-size: 62px;
+	font-family: 'Arvo', serif;
+}
+
+.paragraph
+{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 80px;
+	line-height: 27px;
+}
+
+
+
+
+img 
+{
+	margin-top: 80px;
+
+}
+
+/*<!--ACTIVITES-->*/
+
+.container-fluid
+{
+	margin-top: 100px;
+	width: 100%;
+	background-color:#C60021;
+}
+
+.container-fluid h1{
+	color: white;
+	text-align: center;
+	font-family: 'Arvo', serif;
+	padding: 40px;
+}
+
+.box2
+{
+	margin-bottom: 80px;
+	position: relative;
+	height: 400px;
+	width: 400px;
+	background-image: url(../images/activity2.jpg);
+
+	margin-left: 20px;
+}
+
+.box
+{
+	margin-bottom: 80px;
+	position: relative;
+	height: 400px;
+	width: 400px;
+	background-image: url(../images/activity.jpg);
+	background-repeat: no-repeat;
+	
+	
+}
+
+.subdiv
+{
+	position: absolute;
+	bottom: 0;
+	height: 65px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+}
+
+.subdiv p
+{
+	margin-top: 15px;
+	margin-left: 110px;
+	font-size: 22px;
+	color: black;
+	font-family: 'Arvo', serif;
+
+}
+
+.mostsubdiv
+{
+
+	position: absolute;
+	height: 65px;
+	width: 25%;
+	background-color: rgb(250, 223, 182);
+
+}
+
+.mostsubdiv p
+{
+	font-size: 20px;
+	margin-top: 0%;
+	margin-left: 0px;
+	color: black;
+	font-family: 'B612', sans-serif;
+	text-align: center;
+}
+
+
+
+/*team members*/
+
+
+/*.container.team
+{
+	
+	width: 100%;
+	background-color: blanchedalmond;
+}
+*/
+.team h1
+{
+	color: black;
+	text-align: center;
+	font-family: 'Arvo', serif;
+	margin-top: 40px;
+}
+
+.name
+{
+	font-family: 'B612', sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+.designation
+{
+	font-family: 'B612', sans-serif;
+	text-align: center;
+	
+}  
+
+
+
